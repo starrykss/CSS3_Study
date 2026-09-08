@@ -10,7 +10,7 @@
 <table>
     <tr>
         <td>
-          <img src="hhttps://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" width="80" alt="Dart Logo" title="css"/>
+          <img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/6/62/CSS3_logo.svg/1280px-CSS3_logo.svg.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail" width="80" alt="CSS3 Logo" title="css"/>
         </td>
     </tr>
 </table>
