@@ -1,0 +1,145 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  color: #f8fafc;
+  background: #0f172a;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background:
+    radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.16), transparent 28rem),
+    radial-gradient(circle at 90% 85%, rgba(167, 139, 250, 0.18), transparent 30rem),
+    #0f172a;
+}
+
+.assignment {
+  width: min(100% - 3rem, 980px);
+  margin: 0 auto;
+  padding: 5rem 0;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  color: #38bdf8;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  max-width: 620px;
+  margin-bottom: 1rem;
+  font-size: clamp(2.5rem, 7vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: -0.06em;
+}
+
+.intro {
+  max-width: 560px;
+  margin-bottom: 3rem;
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.box-row {
+  display: flex;
+  align-items: stretch;
+  gap: 1.5rem;
+}
+
+.box {
+  /* Step 5: a reasonable height and a 50% width. */
+  width: 50%;
+  height: 300px;
+  flex: 0 1 50%;
+
+  /* Step 1: border and different padding on all four sides. */
+  padding-top: 2.25rem;
+  padding-right: 2rem;
+  padding-bottom: 1.5rem;
+  padding-left: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 1.25rem;
+
+  /* Step 1–2: different margin on all four sides. */
+  margin-top: 0.5rem;
+  margin-right: 0.75rem;
+  margin-bottom: 1rem;
+  margin-left: 0.25rem;
+
+  background: rgba(30, 41, 59, 0.78);
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.box--first {
+  /* Step 7: display:none removes box 1 and its space from the layout. */
+  display: none;
+}
+
+.box--last {
+  background: linear-gradient(145deg, #2563eb, #7c3aed);
+}
+
+/* Step 8: hover effect on the LAST div element. */
+.box--last:hover {
+  border-color: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 1.75rem 3.5rem rgba(59, 130, 246, 0.3);
+  transform: translateY(-0.5rem) rotate(-1deg);
+}
+
+.box__number {
+  display: inline-block;
+  margin-bottom: 3.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+}
+
+.box h2 {
+  margin-bottom: 0.75rem;
+  font-size: clamp(1.6rem, 3vw, 2.25rem);
+}
+
+.box p {
+  margin-bottom: 0;
+  color: rgba(255, 255, 255, 0.78);
+  line-height: 1.6;
+}
+
+code {
+  padding: 0.15rem 0.35rem;
+  border-radius: 0.3rem;
+  background: rgba(15, 23, 42, 0.45);
+  font-size: 0.9em;
+}
+
+@media (max-width: 640px) {
+  .assignment {
+    width: min(100% - 2rem, 520px);
+    padding: 3rem 0;
+  }
+
+  .box-row {
+    flex-direction: column;
+  }
+
+  .box {
+    width: 100%;
+    flex-basis: 100%;
+  }
+}
