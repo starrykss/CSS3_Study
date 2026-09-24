@@ -12,8 +12,16 @@ body {
   min-height: 100vh;
   margin: 0;
   background:
-    radial-gradient(circle at 15% 10%, rgba(56, 189, 248, 0.16), transparent 28rem),
-    radial-gradient(circle at 90% 85%, rgba(167, 139, 250, 0.18), transparent 30rem),
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(56, 189, 248, 0.16),
+      transparent 28rem
+    ),
+    radial-gradient(
+      circle at 90% 85%,
+      rgba(167, 139, 250, 0.18),
+      transparent 30rem
+    ),
     #0f172a;
 }
 
@@ -82,7 +90,10 @@ h1 {
 
   background: rgba(30, 41, 59, 0.78);
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
-  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    box-shadow 180ms ease;
 }
 
 .box--first {
